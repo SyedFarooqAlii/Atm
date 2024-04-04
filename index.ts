@@ -16,6 +16,21 @@ let pinAnswer = await inquirer.prompt([
 // Step 02
 if (pinAnswer.q1 === myPin) {
   console.log("Correct Pin Code!!!");
+let accountType = await inquirer.prompt([
+{
+
+  name:"accountType",
+  message:"Select Your Account Type",
+  type:"list",
+  choices:["Current Account","Saving Account"]
+}
+
+  
+])
+
+
+
+
 
   let operationAnswer = await inquirer.prompt([
     {
@@ -26,7 +41,7 @@ if (pinAnswer.q1 === myPin) {
     },
   ]);
 
-  console.log(operationAnswer);
+  
   // Step 03
   if (operationAnswer.operation === "withdraw") {
     let amountAns = await inquirer.prompt([

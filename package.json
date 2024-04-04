@@ -1,6 +1,6 @@
 {
-  "name": "fr08-atm",
-  "version": "1.0.0",
+  "name": "fr0817-atm",
+  "version": "1.0.3",
   "description": "This is CLI Based Atm",
   "main": "index.js",
   "type": "module",
